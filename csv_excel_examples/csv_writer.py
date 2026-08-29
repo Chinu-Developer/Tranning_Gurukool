@@ -25,4 +25,4 @@ with open("students_error.csv", "w", newline="") as file:
 #         writer.writerow(["id", "name", "course", "fees"])
 #         writer.writerow([101, "Aman", ])
 #         writer.writerow([102, "Riya", "Error", 18000])
-#         writer.writerow([103, "Rahul", "Python", 15000])
+#         writer.writerow([103, "Rahul", "Python", 15000])    
