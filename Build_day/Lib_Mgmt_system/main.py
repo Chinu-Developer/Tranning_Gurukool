@@ -65,6 +65,7 @@ def search_book(param):
                 if i[1].lower() == param.lower() + ",":
                     print("\n\n")
                     print(Fore.CYAN + f"Book Id : {i[0]} Book Name : {i[1]}  Book Author : {i[2]} Book_Quantity : {i[-1]} ")
+                    
                     return i
 
 
@@ -121,7 +122,7 @@ def issue_book():
 if __name__ == "__main__" :
     while True:
         menu() 
-        clear_screen()       
+              
         choice = input("Enter your choice between 1 to 6 :: ")
         if choice == "1":
             add_book()

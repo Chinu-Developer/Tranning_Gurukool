@@ -1,6 +1,5 @@
 import colorama
-from colorama import  Fore ,Back , Style ,init
-from datetime import datetime 
+from colorama import  Fore ,Back , Style ,init 
 
 def menu():
     init(autoreset=True)
@@ -36,7 +35,8 @@ def add_book():
             print(Fore.RED + " Please use Update Function")
             return 10
     book_id = len(book_ele) + 1
-    
+    book_author = input("Enter author Name Please : ")
+    print(Fore.GREEN + "Book Id is :: ", book_id)
         
 
 
@@ -66,65 +66,45 @@ def Viewbook ():
     else:
         for i in book_ele:
             i = i.replace("\n","")
-            i = i.split(",")
-            i = [item.strip() for item in i]
-            print(Fore.WHITE + f"Book id : {i[0]} Book Name :{i[1]} Book Author  : {i[2]} Book Quantity {i[-1]}")      
-
-
-# def SearchBook(Praam):
-#     """ This is a Function which can be use to search a particular Book & which can be useful """
-#     book_ele = readbook()
-#     if len(book_ele) == 0:
-#         print(Fore.RED +" There is no Book Avalibal in Data base ")
-#     else:              
-#         for i in book_ele:
-#             i = i.replace("\n","")
-#             i = i.split(",")
-#         if Praam.isdigit():
-#             #  print(f"{i[0]} --> {type(i[0])}")
-#             # print(param, type(param))
-#                 if i[0].strip() == Praam:
-#                  print("\n\n")
-#                  print(Fore.CYAN + f"Book Id : {i[0]} Book Name : {i[1]}  Book Author : {i[2]} Book_Quantity : {i[-1]} ")
-#                  return i 
-#         else:
-#             if i[1].lower() == Praam.lower() :
-#                 print("\n\n")
-#                 print(Fore.CYAN + f"Book id : {i[0]} Book Name :{i[1]} Book Author  : {i[2]} Book Quantity {i[-1]}")    
-
-#                 return i
-
-
-
-
-def SearchBook(praam):
-    book_ele = readbook() 
-    if len(book_ele) == 0:
-       print(Fore.RED + "There is no Book in DataBase to Search")
-    else:
-       for i in book_ele:
-            i = i.replace("\n", "")
             i = i.split()
-            if praam.isdigit():
-                # print(f"{i[0]} --> {type(i[0])}")
-                # print(param, type(param))
-                if i[0] == praam + ",":
-                   print("\n\n")
-                   print(Fore.CYAN + f"Book Id : {i[0]} Book Name : {i[1]}  Book Author : {i[2]} Book_Quantity : {i[-1]} ")
-                   return i
-            else:
-                if i[1].lower() == praam.lower() + ",":
-                    print("\n\n")
-                    print(Fore.CYAN + f"Book Id : {i[0]} Book Name : {i[1]}  Book Author : {i[2]} Book_Quantity : {i[-1]} ")
-                    
-                    return i
+            print(Fore.WHITE + f"Book id : {i[0]} Book Name :{i[1]} Book Author  : {i[2]} Book Quantity {i[3]}")      
 
-def Issuebook():
-    user_id = input("Enter User id :  ")
-    val = input ("Enter either book id or Book name ::")
-    book_details = SearchBook(val)
-    quantity = input("Enter Your Quantity : ")
-    print(f"For user {user_id}  book {book_details} has been issued on  {datetime.now().strftime("%d-%m-%Y")}")
+
+def SearchBook(Praam):
+    """ This is a Function which can be use to search a particular Book & which can be useful """
+    book_ele = readbook()
+    if len(book_ele) == 0:
+        print(Fore.RED +" There is no Book Avalibal in Data base ")
+    else:
+        for i in book_ele:
+            i = i.replace("\n","")
+            i = i.split()
+        if Praam.isdidgit():
+            #  print(f"{i[0]} --> {type(i[0])}")
+            # print(param, type(param))
+            if i[0] == Praam + ",":
+                 print("\n\n")
+                 print(Fore.CYAN + f"Book Id : {i[0]} Book Name : {i[1]}  Book Author : {i[2]} Book_Quantity : {i[-1]} ")
+                 return i 
+
+                
+             
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 if __name__ == "__main__":
@@ -137,18 +117,17 @@ if __name__ == "__main__":
         elif choice == "2":
             Viewbook() 
         elif choice == "3":
-             val = input("Enter either a book id or Book name ")
-             SearchBook(val)     
+            print("Search Book")
         elif choice == "4":
             pass
         elif choice == "5":
-            Issuebook()
+            pass
         elif choice == "6":
             print(Fore.GREEN +" Thankyou For Visiting, Please Visti Aagin ")
             break
         else:
             print(Fore.RED + "Invalid Choice") 
-  
+
    
 
           
