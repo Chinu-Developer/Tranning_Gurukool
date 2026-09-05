@@ -18,18 +18,16 @@ from rich.console import Console
 
 console = Console()
 
-print("Login Successful")
+console.print(" [bold yellow]Login Successful [/bold yellow]" )
 
-console.print("[bold green]Login Successful[/bold green]")
-console.print("[cyan]Current Balance: ₹5000[/cyan]")
+console.print("[bold  blue ]Login Successful[/bold blue]")
+console.print("[cyan]Current Balance: ₹10000[/cyan]")
 
 
 
 from pyfiglet import figlet_format
-var = figlet_format("ABC BANK", font="slant")
-
-console.print(f"[green]{var}[/green]")
-
+bank_name = figlet_format("Joshi BANK", font="slant") 
+console.print( f"[blue] {bank_name} [/blue]")
 
 import emoji
 
