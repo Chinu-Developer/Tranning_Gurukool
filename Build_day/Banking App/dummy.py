@@ -20,8 +20,8 @@ console = Console()
 
 print("Login Successful")
 console.print("1")
-# console.print("[bold green]Login Successful[/bold green]")
-# console.print("[cyan]Current Balance: ₹5000[/cyan]")
+console.print("[pink]Login Successful[/pink]")  
+console.print("[cyan]Current Balance: ₹5000[/cyan]")
 
 
 
@@ -46,10 +46,10 @@ console.print("1")
 # # print(dum)
 
 
-# from pwinput import pwinput
-# pin = pwinput("Enter PIN: ", mask="*")
-
-# print(pin)
+from pwinput import pwinput
+pin = pwinput("Enter PIN: ", mask="*")
+       
+print(pin)
 
 
 

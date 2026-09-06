@@ -140,7 +140,7 @@ def sub_menu(acc_nr):
         if choice == "1":
             check_balance(acc_nr)
         elif choice == "2":
-            dep_money(acc_nr)
+            pass
         elif choice == "3":
             pass
         elif choice == "4":
