@@ -148,7 +148,7 @@ def sub_menu(acc_nr):
         elif choice == "5":
             break
         else:
-            err_msg("CHOICE")
+            err_msg("CHOICE")          
         
 #==========================================================
 

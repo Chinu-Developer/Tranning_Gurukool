@@ -31,12 +31,12 @@ console.print("[cyan]Current Balance: ₹5000[/cyan]")
 # console.print(f"[green]{var}[/green]")
 
 
-# import emoji
+import emoji
 
-# print(emoji.emojize(":bank:"))
-# print(emoji.emojize(":credit_card:"))
-# print(emoji.emojize(":money_bag:"))
-# print(emoji.emojize(":dollar:"))
+print(emoji.emojize(":bank:")) 
+print(emoji.emojize(":money_bag:"))
+print(emoji.emojize(":dollar:"))
+print(emoji.emojize(":credit_card:"))
 
 # # from getpass import getpass
 

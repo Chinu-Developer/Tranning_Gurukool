@@ -4,3 +4,4 @@
 4,  Destiny , Chinmay , 100 
 5,  Spiderman , Jjj, 10 
 6, English, Ashwini, 200 
+7,  My jouney , Parth, 10 
