@@ -1,0 +1,5 @@
+User :my name is RebeccaAssistant :Hello Rebecca! It's nice to meet you. How can I help you today?user :My age is 34Assistant :Got it, Rebecca! Thanks for letting me know. 
+
+How can I help you today? Is there something specific on your mind?user :I live in MiamiAssistant :Got it, Miami is a lovely place! 
+
+Since I know a bit about you now—you're Rebecca, you're 34, and you live in Miami—how can I help you today? Are you looking for local recommendations, or is there something else on your mind?user :exit
