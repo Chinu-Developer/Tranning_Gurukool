@@ -1,0 +1,11 @@
+openpyxl
+rich
+pyfiglet
+emoji
+getpass
+pwinput
+streamlit
+google-gemini
+os
+
+# pip install -r requirements.txt
